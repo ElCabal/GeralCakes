@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/Logo.png";
+import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
   return (
-    <nav className=" px-10 flex justify-between items-center h-20 bg-white text-black relative shadow-md">
+    <nav className=" fixed w-full px-10 flex justify-between items-center h-20 bg-white text-black  shadow-md">
       <Link to="/" className="w-20">
         <img src={Logo} alt="logo" />
       </Link>
       <div className="container_icons md:hidden flex">
         {" "}
-        <div className="mr-8   ">
+        <div className="mr-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
