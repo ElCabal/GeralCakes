@@ -17,7 +17,7 @@ import img4 from "../assets/images/img4.jpeg";
 export default function Carousel() {
   return (
     <div className="2xl:mx-auto 2xl:container flex justify-center">
-      <div className="2xl:px-20 px-6 py-12 w-full lg:w-4/5">
+      <div className="2xl:px-20 px-6 py-5 w-full lg:w-4/5">
         {/* Carousel for Small-Sized Screen */}
         <CarouselProvider
           className="relative block sm:hidden"

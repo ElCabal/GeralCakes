@@ -1,5 +1,7 @@
 import React from "react";
-import img1 from "../assets/images/img1.jpeg";
+import { Link } from "react-router-dom";
+import bghero from "../assets/images/bghero.jpg";
+
 const Welcome = () => {
   return (
     /*     <div className="  mb-20 flex flex-col justify-center items-center ">
@@ -17,19 +19,23 @@ const Welcome = () => {
       </div>
     </div> */
     <div
-      className="hero min-h-screen"
-      style={{ backgroundImage: `url(${img1})` }}
+      className=" mt-0 hero min-h-screen "
+      style={{ backgroundImage: `url(${bghero})` }}
     >
-      <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero-overlay bg-opacity-30 pt-20"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+          <h1 className="mb-5 text-8xl font-black">Geral Cakes</h1>
           <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            officiis ullam pariatur ea ab, odit quas cumque soluta id molestias
+            dolor quos nostrum distinctio quasi, aliquid consectetur vel. At,
+            harum.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+
+          <Link to="/Products">
+            <button class="btn glass w-60">DELEÍTATE</button>
+          </Link>
         </div>
       </div>
     </div>
