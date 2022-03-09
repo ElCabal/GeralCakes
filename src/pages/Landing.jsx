@@ -1,11 +1,19 @@
 import React from "react";
 
-const Home = () => {
+import "react-animated-slider/build/horizontal.css";
+import Carousel from "../components/Carousel";
+import Hero from "../components/Hero";
+import Welcome from "../components/Welcome";
+
+const Landing = () => {
   return (
-    <div className="pt-20 h-screen text-6xl bg-red-600">
-      <h1>Landing</h1>;
+    <div className="  text-2xl bg-white flex flex-col  gap-4">
+      <Carousel />
+      <Welcome />
+
+      {/* <Hero /> */}
     </div>
   );
 };
 
-export default Home;
+export default Landing;
