@@ -2,7 +2,7 @@ import React from "react";
 
 const ShopCart = () => {
   return (
-    <div className=" bg-pink-100 pt-20 px-32 h-screen  text-6xl">
+    <div className=" bg-pink-100 pt-32 px-20 h-screen text-5xl text-center">
       <h1>ShopCart</h1>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="  h-20 mx-auto container xl:px-20 lg:px-10 sm:px-6 px-4 px-4 py-12">
+    <div className="  h-20 mx-auto container xl:px-20 lg:px-10 sm:px-6  px-4 py-12">
       <div className="flex flex-col items-center justify-center">
         <div>
           {/*  <svg
@@ -89,7 +89,7 @@ const Footer = () => {
             </svg>
           </div>
         </div>
-        <div className="flex items-center mt-6">
+        <div className="flex items-center mt-6 mb-4">
           <p className="text-base leading-4 text-gray-800">
             2022 <span className="font-semibold">Luxiwood</span>
           </p>

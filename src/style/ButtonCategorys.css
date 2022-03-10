@@ -1,0 +1,6 @@
+.btn_hoverbg {
+  background-color: white;
+}
+.btn_hoverbg:hover {
+  background-color: #fcddcb;
+}

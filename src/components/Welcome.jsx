@@ -1,23 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import bghero from "../assets/images/bghero.jpg";
+import ButtonHero from "./buttons/ButtonHero";
 
 const Welcome = () => {
   return (
-    /*     <div className="  mb-20 flex flex-col justify-center items-center ">
-      <div className=" w-1/2">
-        <h1 className="font-black"> Geral Cakes </h1>
-        <p className="text-sm">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quos
-          corrupti obcaecati, libero, recusandae, esse deserunt facilis nisi
-          vero aspernatur et tempora culpa sit reprehenderit. Excepturi eum
-          labore dolores atque.
-        </p>
-      </div>
-      <div className="w-1/2">
-        <img src={img1} alt="" />
-      </div>
-    </div> */
     <div
       className=" mt-0 hero min-h-screen "
       style={{ backgroundImage: `url(${bghero})` }}
@@ -34,7 +21,9 @@ const Welcome = () => {
           </p>
 
           <Link to="/Products">
-            <button class="btn glass w-60">DELEÍTATE</button>
+            <ButtonHero>
+              <p>DELÉITATE</p>
+            </ButtonHero>
           </Link>
         </div>
       </div>

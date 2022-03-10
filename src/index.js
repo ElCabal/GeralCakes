@@ -7,13 +7,16 @@ import Landing from "./pages/Landing";
 import DetailProduct from "./pages/DetailProduct";
 import Products from "./pages/Products";
 import ShopCart from "./pages/ShopCart";
+import Tortas from "./components/categorys/Tortas";
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route index="/Landing" element={<Landing />} />
         <Route path="/DetailProduct" element={<DetailProduct />} />
-        <Route path="/Products" element={<Products />} />
+        <Route path="/Products" element={<Products />}>
+          <Route path=":category" element={<Products />} />
+        </Route>
         <Route path="/ShopCart" element={<ShopCart />} />
       </Route>
     </Routes>
