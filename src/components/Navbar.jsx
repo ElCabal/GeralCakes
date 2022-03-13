@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/Logo.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { GoThreeBars } from "react-icons/go";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import "../style/Navbar.css";
@@ -33,7 +33,7 @@ const Navbar = () => {
         <Link to="/" className="mr-8 text-2xl font-medium">
           Inicio
         </Link>
-        <Link to="/Products" className="mr-8 text-2xl font-medium">
+        <Link to="/Products/tortas" className="mr-8 text-2xl font-medium">
           Productos
         </Link>
         <Link to="/ShopCart" className="mr-8 text-2xl font-medium">
@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link to="/" className="font-semibold text-2xl">
             Inicio
           </Link>
-          <Link to="/Products" className=" font-semibold text-2xl">
+          <Link to="/Products/tortas" className=" font-semibold text-2xl">
             Productos
           </Link>
           <Link to="/ShopCart" className="font-semibold text-2xl">
