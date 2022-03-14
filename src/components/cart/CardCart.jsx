@@ -1,8 +1,11 @@
 import React from "react";
-
+import { HiOutlineX } from "react-icons/hi";
 const CardCart = () => {
   return (
-    <div className="flex bg-white shadow-lg rounded-md px-2  py-4">
+    <div className="flex bg-white shadow-lg rounded-md px-2  py-4 relative ">
+      <span className="absolute rounded-full bg-red-800 text-white -top-2 -left-2">
+        <HiOutlineX />
+      </span>
       <img src="/images/img4.jpeg" alt="" className="w-20 rounded-md" />
       <div className="text-center flex">
         <p className=" text-red-700 text-sm">

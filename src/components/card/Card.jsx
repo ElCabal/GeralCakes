@@ -1,32 +1,22 @@
-import React from "react";
+/* import { useContext } from "react"; */
+import { Link } from "react-router-dom";
 
-const Card = ({ nombre, PrecioMinimo, PrecioMaximo, img1 }) => {
+const Card = ({ name, PriceMin, PriceMax, image, id }) => {
+  /* const Contexto = useContext(DataContext); */
   return (
-    /* <div class="card card-compact w-96 bg-base-100 shadow-xl">
-      <figure>
-        <img src={img1} alt="Shoes" />
+    <div className="card bg-base-100 shadow-xl p-1">
+      <figure className="px-10 pt-10">
+        <img src={image} alt="Cakes" className="rounded-xl" />
       </figure>
-      <div class="card-body">
-        <h2 class="card-title">{nombre}</h2>
-        <span>
-          ${PrecioMinimo}-{PrecioMaximo}
-        </span>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Buy Now</button>
-        </div>
-      </div>
-    </div> */
-    <div class="card bg-base-100 shadow-xl">
-      <figure class="px-10 pt-10">
-        <img src={img1} alt="Cakes" class="rounded-xl" />
-      </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title">{nombre}</h2>
+      <div className="card-body items-center text-center">
+        <h2 className="card-title">{name}</h2>
         <p>
-          ${PrecioMinimo}-{PrecioMaximo}
+          ${PriceMin}-{PriceMax}
         </p>
-        <div class="card-actions">
-          <button class="btn btn-primary">VER PRODUCTOS</button>
+        <div className="card-actions">
+          <Link to={`/DetailProduct/${id}`}>
+            <button className="btn btn-primary">VER PRODUCTOS</button>
+          </Link>
         </div>
       </div>
     </div>

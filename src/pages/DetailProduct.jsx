@@ -1,19 +1,25 @@
-import React, { useState } from "react";
-import img1 from "../assets/images/img1.jpeg";
+import React, { useContext, useState } from "react";
+import { useParams } from "react-router-dom";
+
+import Context from "../hooks/Context/DataContext";
 const DetailProduct = () => {
   const [count, setCount] = useState(0);
+  const { id } = useParams();
+  /* const id = identify.id; */
 
+  const detailContext = useContext(Context);
+  const result = detailContext.Filter.filter(
+    (item) => item.id === parseInt(id)
+  );
+  console.log(result);
   return (
-    <div className="pt-32 pb-10 px-10 bg-pink-100 flex flex-col gap-4">
-      <h2 className="text-2xl font-semibold ">Torta Naranja</h2>
-      <img src={img1} alt="" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nemo
-        facere quam minus, quasi nostrum molestias delectus minima voluptatum,
-        soluta quos praesentium ipsum ipsa alias quod! Quam voluptatem nulla,
-        quibusdam dignissimos dicta quasi laudantium architecto possimus
-        molestias.
-      </p>
+    <div className="pt-32 pb-10 px-10 bg-pink-100 flex flex-col gap-4 md:flex-col-2 md:flex-none md:flex-col-2">
+      <div>
+        <h2 className="text-2xl font-semibold ">{result[0].name}</h2>
+        <img src={result[0].image} alt="" />
+        <p>{result[0].description}</p>
+      </div>
+
       <div className="flex flex-col gap-8 p-10 bg-white rounded-md">
         <div>
           <h3>Porciones</h3>

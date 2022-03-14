@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import ButtonCategorys from "./buttons/ButtonCategorys";
 
-const Buscador = () => {
+const FilterSearch = () => {
   return (
     <div>
       <input
@@ -10,7 +10,7 @@ const Buscador = () => {
         placeholder="Buscar"
         class="input input-bordered w-full max-w-md"
       ></input>
-      <div className="pt-10 flex flex-row gap-8  justify-center">
+      <div className="pt-10 flex flex-row gap-8  justify-center ">
         <NavLink to="todos">
           <ButtonCategorys>
             <span>TODOS</span>
@@ -31,4 +31,4 @@ const Buscador = () => {
   );
 };
 
-export default Buscador;
+export default FilterSearch;

@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import "../src/style/App.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Context from "./hooks/Context";
+import Context from "./hooks/Context/DataContext";
 import Cakes from "./assets/data/Cakes";
 import { useState } from "react";
 

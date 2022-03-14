@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import {
   CarouselProvider,
   Slider,
@@ -62,7 +61,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Postres personalizados
+                        {/* Postres personalizados */}
                       </h1>
                     </div>
                   </div>
@@ -74,7 +73,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Personalizaciones a tu gusto */}
                       </h1>
                     </div>
                   </div>
@@ -90,7 +89,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -102,7 +101,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -118,7 +117,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -130,7 +129,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -146,7 +145,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -158,7 +157,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -235,7 +234,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -247,7 +246,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -263,7 +262,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -275,7 +274,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -291,7 +290,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -303,7 +302,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -319,7 +318,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>
@@ -331,7 +330,7 @@ export default function Carousel() {
                     />
                     <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
                       <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                        Lounge Interior
+                        {/* Lounge Interior */}
                       </h1>
                     </div>
                   </div>

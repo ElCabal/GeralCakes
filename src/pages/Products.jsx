@@ -1,31 +1,32 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Buscador from "../components/Buscador";
+import FilterSearch from "../components/FilterSearch";
 import Card from "../components/card/Card";
-import Context from "../hooks/Context";
+import DataContext from "../hooks/Context/DataContext";
 const Products = () => {
-  const Contexto = useContext(Context);
-  /* console.table(Contexto.Filter[0].PrecioMinimo); */
+  const Contexto = useContext(DataContext);
+  /* console.table(Contexto.Filter[0].PriceMin); */
   const { Category } = useParams();
-  const [isCategoria, setCategoria] = useState();
+  const [isCategory, setCategoria] = useState();
 
   useEffect(() => {
     setCategoria(Category);
   }, [Category]);
 
   return (
-    <div className="pt-32 px-10  bg-pink-100  text-center ">
+    <div className="pt-32 px-10  bg-pink-100 text-center">
       <div>
-        <Buscador />
-        <div className="grid grid-col-1 grid-flow-row gap-4 mt-10 pb-10 justify-center">
+        <FilterSearch />
+        <div className="grid grid-col-1 grid-flow-row gap-4 mt-10 pb-10 justify-center sm:grid-cols-2 md:grid-cols-4">
           {Contexto.Filter.map((Items) => {
-            if (Items.categoria === isCategoria || isCategoria === "todos") {
+            if (Items.category === isCategory || isCategory === "todos") {
               return (
                 <Card
-                  nombre={Items.nombre}
-                  PrecioMinimo={Items.PrecioMinimo}
-                  PrecioMaximo={Items.PrecioMaximo}
-                  img1={Items.imagen}
+                  name={Items.name}
+                  PriceMin={Items.PriceMin}
+                  PriceMax={Items.PriceMax}
+                  image={Items.image}
+                  id={Items.id}
                 />
               );
             } else {
