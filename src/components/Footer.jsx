@@ -18,7 +18,7 @@ const Footer = () => {
             />
           </svg> */}
         </div>
-        <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-8">
+        {/*  <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-8">
           <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800">
             About
           </p>
@@ -31,7 +31,7 @@ const Footer = () => {
           <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800">
             Privacy Policy
           </p>
-        </div>
+        </div> */}
         <div className="flex items-center gap-x-8 mt-6">
           <div className="cursor-pointer">
             <svg
@@ -91,7 +91,10 @@ const Footer = () => {
         </div>
         <div className="flex items-center mt-6 mb-4">
           <p className="text-base leading-4 text-gray-800">
-            2022 <span className="font-semibold">Luxiwood</span>
+            2022{" "}
+            <span className="font-semibold">
+              Design <span className=" text-cyan-900">Luis Felipe Cabal</span>
+            </span>
           </p>
           <div className="border-l border-gray-800 pl-2 ml-2">
             <p className="text-base leading-4 text-gray-800">
