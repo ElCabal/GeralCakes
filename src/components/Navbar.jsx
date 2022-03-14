@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/Logo.png";
 import { useState } from "react";
 import { GoThreeBars } from "react-icons/go";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import CartContext from "../hooks/Context/CartContext";
+import DataContext from "../hooks/Context/DataContext";
 import "../style/Navbar.css";
 
 const Navbar = () => {
+  const { cart, setCart } = useContext(DataContext);
+  console.log(cart);
   const [navActive, setNavActive] = useState(false);
+
   /*   useEffect(() => {
     window.addEventListener("resize", () =>
       window.innerWidth >= 640 ? setNavActive(true) : setNavActive(false)
@@ -20,8 +25,13 @@ const Navbar = () => {
       </Link>
       <div className="container_icons md:hidden flex">
         {" "}
-        <Link to="/ShopCart">
+        <Link to="/ShopCart" className="relative">
           <MdOutlineShoppingCart className="h-8 w-8 mr-9" />
+          {cart.length > 0 && (
+            <div className=" absolute rounded-xl bg-red-700 h-5 w-5 text-sm text-white font-black text-center bottom-4 right-8">
+              {cart.length}
+            </div>
+          )}
         </Link>
         <GoThreeBars
           onClick={() => setNavActive(!navActive)}

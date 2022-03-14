@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../assets/images/img4.jpeg";
 import { BiShoppingBag } from "react-icons/bi";
 import CardCart from "../components/cart/CardCart";
+import { useState } from "react";
+import DataContext from "../hooks/Context/DataContext";
 
 const ShopCart = () => {
+  const { cart, setCart } = useContext(DataContext);
+  console.log(cart);
   return (
     <div className=" bg-pink-100 pt-32 px-5 pb-4 flex flex-col gap-10 md:flex-col-2">
       <div>
         <h2 className="text-2xl font-black text-center">Resumen del Carrito</h2>
         <div className="flex flex-col gap-8 bg-white p-4 rounded-md">
-          <CardCart />
+          {cart.map((productItem) => (
+            <CardCart
+              product={productItem.product[0]}
+              price={productItem.price / productItem.quantity}
+              quantityProp={productItem.quantity}
+            />
+          ))}
           <div className="">
             <button className=" bg-red-400 p-2 rounded-lg flex items-center gap-2">
               <BiShoppingBag className="text-2xl" />
