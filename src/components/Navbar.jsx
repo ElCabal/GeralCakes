@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../public/images/Logo.png";
+import Logo from "../assets/images/Logo.png";
 import { useState } from "react";
 import { GoThreeBars } from "react-icons/go";
 import { MdOutlineShoppingCart } from "react-icons/md";
