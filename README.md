@@ -1,4 +1,4 @@
-# GERAL CAKES (Ecommerce)
+# :cupcake:GERAL CAKES (Ecommerce)
 
 Geral cakes es mi primera App en ReactJs, mi primer proyecto con un cliente real, el cuál es un ecommerce para un emprendimiento local de venta de postres personalizados.
 
