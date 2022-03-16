@@ -56,8 +56,8 @@ https://nifty-borg-e0e768.netlify.app/
 
 ## Contacto ✒️
 
-##### Mail: cabalholguinlufe@gmail.com
-##### In: https://www.linkedin.com/in/luis-felipe-cabal
+### Mail: cabalholguinlufe@gmail.com
+### In: https://www.linkedin.com/in/luis-felipe-cabal
 
 
-⌨️ con ❤️ por [ElCabal](https://github.com/ElCabal) 😊
+#### ⌨️ con ❤️ por [ElCabal](https://github.com/ElCabal) 😊
